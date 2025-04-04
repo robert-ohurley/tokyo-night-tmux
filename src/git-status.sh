@@ -17,9 +17,9 @@ STATUS=$(git status --porcelain 2>/dev/null | grep -cE "^(M| M)")
 SYNC_MODE=0
 NEED_PUSH=0
 
-if [[ ${#BRANCH} -gt 25 ]]; then
-  BRANCH="${BRANCH:0:25}…"
-fi
+# if [[ ${#BRANCH} -gt 25 ]]; then
+#   BRANCH="${BRANCH:0:25}…"
+# fi
 
 STATUS_CHANGED=""
 STATUS_INSERTIONS=""
